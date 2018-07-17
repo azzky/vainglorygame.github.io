@@ -1,0 +1,323 @@
+/**reset**/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+ol, ul { list-style: none }
+blockquote, q { quotes: none }
+:focus { outline: 0 }
+table { border-collapse: collapse; border-spacing: 0; }
+img { max-width: 100%; height: auto; }
+mark { background: none; }
+select { max-width: 100%; }
+
+@font-face{
+	font-family: "Akrobat"; src:url(../fonts/Akrobat-Regular.otf);
+}
+p, h3, a {font-family:Corbel}
+h1, h2, nav a, .grid-item {font-family:Akrobat}
+html {background: #1e1e1e}
+body {width: 1260px;margin: 0 auto;background: #3c3c3c;}
+#content {
+	width: 945px;
+}
+#sidebar {
+	width: 315px;
+	float: right;
+}
+nav {
+	position: absolute;
+top: 10px;
+z-index: 5;
+left: calc(50% - 500px);
+}
+nav ul li {
+	float: left;
+}
+nav ul li a:hover {
+	color: orange;
+}
+nav ul li a {
+	color: white;
+text-decoration: none;
+font-size: 20px;
+margin: 12px;
+text-transform: uppercase;
+}
+video {
+	min-width: 100%;
+	min-height: 100%;
+}
+.video-overlay {
+	background: rgba(0,0,0,0.5);
+position: absolute;
+width: 100%;
+height: 100%;
+}
+.first-display {
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+.download {
+	position: absolute;
+top: 30%;
+left: 20%;
+color: white;
+width: 60%;
+font-size: 50px;
+text-align: center;
+text-transform: uppercase;
+}
+.download span {
+	font-weight: 700;
+}
+.download img {
+	width: 200px;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+.newsblock {
+	height: 365px;
+}
+.column {
+	width: 315px;
+    float: left;
+    height: 315px;
+}
+.col3 {
+	border-top: 1px solid gray;
+}
+figure {
+	position: relative;
+	color: white;
+}
+figure img {
+	display: block;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	height: calc(100% - 6px);
+	cursor: pointer;
+	padding: 6px 10px 0 10px;
+}
+figcaption p {
+	bottom: 10px;
+	position: absolute;
+	width:90%
+}
+figure:hover figcaption {
+	background: rgba(0,0,0,0.5);
+	color: orange
+}
+.third-col {
+	height: 104px;
+	border-bottom: 1px solid gray;
+}
+.newstitle {
+	height: 50px;
+	background: url(../images/sep.png) repeat-x center;
+	margin: 0px 20px;
+}
+.herotitle {
+	height: 58px;
+	background: url(../images/sep.png) repeat-x center;
+	margin: 0px 20px;
+}
+.newstitle h2 {
+	float: left;
+color: white;
+font-size: 32px;
+margin: 4px 0 0 20px;
+text-transform: uppercase;
+font-weight: 700;
+}
+.newstitle a:last-child {
+	float: right;
+	background: black;
+	padding: 6px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: orange;
+	margin: 8px 15px 0;
+}
+.herotitle h1 {
+	text-align: center;
+font-size: 45px;
+color: white;
+line-height: 45px;
+font-weight: 700;
+}
+.weekly {
+	padding-bottom: 7px;
+	margin: 10px;
+	background: #0c0c0c;
+	color: white;
+}
+.weekly-title {
+	margin: 15px auto 10px;
+	width: 75%;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+.weekly-title img {
+	float: left;
+}
+.weekly-title h3 {
+	color: orange;
+	margin-top: 5px;
+	font-size: 32px;
+	line-height: 26px;
+}
+.sborka {
+	height: 70px;
+	margin: 2px 8px;
+	font-size: 13px;
+}
+.sborka a {
+	color: white;
+}
+.sborka p {
+	color: orange;
+}
+.sborka a > img {
+	width: 61px;
+	float: left;
+	margin: 2px;
+	border: 1px solid #0c0c0c;
+	padding: 2px;
+	background: #1e1e1e;
+}
+.sborka div {
+	width: calc(100% - 85px);
+	float: right;
+	margin: 2px 0;
+	border: 1px solid #0c0c0c;
+	height: 65px;
+	padding-left: 10px;
+	background: #1e1e1e;
+}
+.sborka div img {
+	width: 24px;
+}
+.sborka:hover a > img, .sborka:hover div {
+	border: 1px solid orange;
+}
+button {
+	background: none;
+	border: none;
+	color: white;
+}
+button:selected {
+	border: 1px solid white;
+}
+.grid {margin-top: 25px;width: 1135px;margin: 25px auto 0;}
+.grid-item {margin:1px;border: 2px solid #3c3c3c;position:relative;overflow: hidden;}
+.grid-item:hover {border: 2px solid orange;cursor:pointer}
+.new {border: 2px solid red}
+.free {border: 2px solid #b5e302}
+.grid-item:after {
+	position: absolute;
+	top: auto;
+	left: auto;
+	bottom: 7px;
+	right: -16px;
+	width: 65px;
+	height: 18px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	text-align: center;
+	line-height: 18px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+	color: white;
+}
+.button-group button {
+	font-size: 30px;
+	margin: 0 15px;
+	font-family: akrobat;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+.free:after {
+	top: 8px;
+	left: -16px;
+	bottom: auto;
+	right: auto;
+	content: "free";
+	background: #b5e302;
+}
+.filter-button-group button {border: 2px solid #3c3c3c}
+.sort-by-button-group button:hover {border-bottom:2px solid white}
+.filter-button-group button:hover {border: 2px solid white}
+.sort-by-button-group .is-checked {border:none;border-bottom:2px solid white}
+.filter-button-group .is-checked {border: 2px solid white }
+.new:after {
+	top: auto;
+	left: auto;
+	bottom: 8px;
+	right: -16px;
+	content: "new";
+	background: red;
+}
+.grid-item img {display: block}
+.grid-item p {display:none}
+.heroes {width: 1180px;margin:10px auto 45px}
+.button-group {text-align: center}
+footer > div {float:left}
+footer a, footer p, footer, .email {color:white;font-weight:700;font-family:Akrobat;}
+footer {background: black;height: 192px;padding-top: 10px;font-size: 21px;}
+footer a:hover {color:orange}
+footer ul {padding-left: 100px}
+.footer1, .footer2 {width:25%}
+.footer3 {width: 25%;padding-right: 5%}
+.footer4 {width: 10%;font-size: 55px;margin-top: 40px}
+.copyright {width: 100%;text-align: center;position: relative;padding: 5px 0}
+.by {position:absolute;right:50px;top:0}
+.email {
+	background: none;
+	text-align: center;
+	border: 1px solid white;
+	margin-right: -7px;
+	height: 26px;
+	padding-top: 5px;
+	font-size: 16px;
+}
+.submit {
+	font-size: 20px;
+line-height: 30px;
+font-family: akrobat;
+}
+.icn {float:right;font-family: fontawesome}
+.view:before {content: "\f06e"}
+.fav:before {content: "\f005"}
+.pager {height: 27px;}
+.pager a {text-decoration:none;color:inherit}
+.pager div {float:left;background: #1e1e1e}
+.pager div:nth-child(odd) {width:30%;text-align:center;text-transform:uppercase;font-family:verdana}
+.pager div:nth-child(2) {width:38%;margin:0 1%;height:22px}
+nav i {display:none}
+.comments {padding: 10px;}
+.comments h2 {margin-bottom: 10px;}
+.comment {background: #1e1e1e;margin-bottom: 5px;}
+.comment img {width: 45px;float: left;margin: 5px;}
+.theme a {color: orange;margin-right: 10px;text-decoration:none}
+.date {color: #7b7b7b;float: left;}
+.summary {color:#aaa}
+
+@media screen and (max-width: 767px) {
+	video, #sidebar, nav > ul {display:none}
+	.download {font-size:25px}
+	#content, .grid, body, .heroes, .column, .grid-item img {width:100%}
+	.grid-item {width:48%}
+	.footer1, .footer2 {width:50%;}
+	footer ul {padding-left: 20px}
+	.footer3 {width: 80%;padding: 0}
+	.footer4 {width: 20%;text-align: center}
+	.by {top:95%}
+	footer {height: 385px}
+	nav {left: calc(100% - 60px);top: 20px}
+	nav i {display:block;color: white;font-size: 50px !important}
+}
